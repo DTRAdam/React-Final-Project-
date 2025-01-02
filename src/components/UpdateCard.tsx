@@ -1,7 +1,7 @@
 import { FormikValues, useFormik } from "formik";
 import { FunctionComponent, useContext, useEffect, useState } from "react";
 import * as yup from "yup"
-import { getCardById, updateCard } from "../services/cardsService";
+import { updateCard } from "../services/cardsService";
 import { Card } from "../interfaces/cards";
 import { successMsg } from "../services/feedback";
 
