@@ -45,7 +45,7 @@ function App() {
               <Route path={"/mycards"} element={<MyCards />} />
               <Route path={"/updatecard"} element={<UpdateCard />} />
               <Route path={"/crm"} element={<Crm />} />
-              <Route path={"/pagenotfound"} element={<PageNotFound />} />
+              <Route path={"*"} element={<PageNotFound />} />
             </Routes>
             <Footer />
           </Router>
