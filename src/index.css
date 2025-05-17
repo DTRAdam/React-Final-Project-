@@ -25,6 +25,19 @@ body {
   color: white !important;
 }
 
+.navbar-toggler {
+  background-color: #FAFAFA;
+}
+
+.pagination {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  margin-top: 20px;
+}
 
 .footerul {
   margin-top: 20px;
@@ -490,11 +503,29 @@ h1 {
 
 
 
+
 .pagination {
+  align-content: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+
+
+
+.page-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.page-btn.active {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
 }
 
 .page-btn {
@@ -617,6 +648,7 @@ h2 {
   margin-top: 20px;
 }
 
+
 @media (max-width: 768px) {
 
   .feature-section,
@@ -624,6 +656,15 @@ h2 {
   .get-started-section,
   .future-section {
     padding: 15px;
+  }
+
+  .pagination {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 100%;
   }
 
   .feature h3,
