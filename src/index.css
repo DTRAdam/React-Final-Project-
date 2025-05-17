@@ -39,6 +39,8 @@ body {
   margin-top: 20px;
 }
 
+
+
 .footerul {
   margin-top: 20px;
   padding-left: 0;
@@ -667,6 +669,8 @@ h2 {
     max-width: 100%;
   }
 
+
+
   .feature h3,
   .future-feature h3 {
     font-size: 1.2rem;
@@ -676,5 +680,45 @@ h2 {
     width: 100%;
     text-align: center;
     padding: 15px;
+  }
+
+  .table {
+    width: 70%;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .crmpagination {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 100%;
+  }
+
+  .previousbtn {
+    width: 80px;
+    padding: 5px;
+    margin: 0 !important;
+  }
+
+  .nextbtn {
+    width: 60px;
+    padding: 5px;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 357px) {
+
+  .crmpagination {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 100%;
   }
 }
