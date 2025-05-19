@@ -91,7 +91,7 @@ const Crm: FunctionComponent<CrmProps> = () => {
                 {users.length ? (
                     <>
                         <div className="table-responsive">
-                            <table className="table table-dark table-striped">
+                            <table className="table table-dark crmtable table-striped">
                                 <thead>
                                     <tr>
                                         <th className="col-2">Id</th>
