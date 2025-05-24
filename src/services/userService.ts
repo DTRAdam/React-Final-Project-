@@ -1,7 +1,7 @@
 import axios from "axios";
 import { users } from "../interfaces/users";
 import { jwtDecode, JwtPayload } from "jwt-decode";
-import useUser from "../hooks/useUser";
+
 
 const api: string = `${process.env.REACT_APP_API}/users`;
 

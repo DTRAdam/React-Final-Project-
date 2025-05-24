@@ -15,14 +15,14 @@ const useUser = () => {
             setIsBusiness(decoded.isBusiness)
             setIsAdmin(decoded.isAdmin)
             setUserId(decoded._id)
+            setIsLoggedIn(true)
             getAllUsers().then((res) => {
                 setUsers(res.data)
 
             }).catch((err) => {
                 console.log(err);
-
             })
-            setIsLoggedIn(true)
+
 
         }
     },)

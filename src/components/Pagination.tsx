@@ -4,7 +4,7 @@ interface PaginationProps {
     currentPage: number;
     totalPages: number;
     onPageChange: (page: number) => void;
-    maxVisiblePages?: number; // Optional prop
+    maxVisiblePages?: number;
 }
 
 const Pagination: React.FC<PaginationProps> = ({
@@ -40,7 +40,6 @@ const Pagination: React.FC<PaginationProps> = ({
                 disabled={currentPage === 1}
                 className="page-btn"
             >
-                &laquo;
             </button>
 
             {pages.map((page) => (
@@ -58,7 +57,6 @@ const Pagination: React.FC<PaginationProps> = ({
                 disabled={currentPage === totalPages}
                 className="page-btn"
             >
-                &raquo;
             </button>
         </div>
     );
