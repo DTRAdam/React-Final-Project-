@@ -23,11 +23,8 @@ const Login: FunctionComponent<LoginProps> = () => {
         onSubmit: (values) => {
             checkUser(values.email, values.password).then((res) => {
                 if (res.data.length) {
-                    // set the isloggedin state to true after login
                     setIsLoggedIn(true)
                     localStorage.token = res.data
-                    // check to see what the res.data is 
-                    // console.log(res.data);    
                     successMsg(`Welcome back`)
                     navigate("/")
                 } else {

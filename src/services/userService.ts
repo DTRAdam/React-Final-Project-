@@ -30,8 +30,6 @@ interface CustomPayload extends JwtPayload {
     isAdmin: boolean,
     iat: number
 }
-
-
 export async function getUserDetails(token: string) {
     try {
         let decode = jwtDecode<CustomPayload>(token)
@@ -75,68 +73,3 @@ export function updateUser(user: users) {
         }
     })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export function getUserById(_id: string) {
-//     return axios.get(`${api}/${_id}`)
-// }

@@ -18,12 +18,9 @@ const useUser = () => {
             setIsLoggedIn(true)
             getAllUsers().then((res) => {
                 setUsers(res.data)
-
             }).catch((err) => {
                 console.log(err);
             })
-
-
         }
     },)
     return { isBusiness, isAdmin, userId, setIsBusiness, isLoggedIn, setIsLoggedIn, setUsers, users, setIsAdmin }

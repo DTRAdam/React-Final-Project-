@@ -516,9 +516,6 @@ h1 {
 
 }
 
-
-
-
 .pagination {
   align-content: center;
   display: flex;
@@ -527,8 +524,6 @@ h1 {
   gap: 0.5rem;
   max-width: 100%;
 }
-
-
 
 .page-btn {
   padding: 0.5rem 1rem;

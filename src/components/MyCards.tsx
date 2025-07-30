@@ -19,7 +19,6 @@ const MyCards: FunctionComponent<MyCardsProps> = () => {
     const { isBusiness } = useUser()
     const handleDelete = async (cardId: string) => {
         try {
-
             const result = await Swal.fire({
                 title: "Are you sure you want to delete this card?",
                 text: "You won't be able to revert this!",
@@ -106,11 +105,6 @@ const MyCards: FunctionComponent<MyCardsProps> = () => {
                 show={openAddModal}
                 onHide={() => { setOpenAddModal(false) }}
                 refresh={refresh} />
-            <AddCardModal
-                show={openAddModal}
-                onHide={() => { setOpenAddModal(false) }}
-                refresh={refresh}
-            />
         </>
     );
 }
